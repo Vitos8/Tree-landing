@@ -85,31 +85,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 130%;
   letter-spacing: 0.04em;
-}
-
-.timer__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-}
-
-.timer .timer__nums {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .container {
   max-width: 1374px;
   margin: 0 auto;
   padding: 0px 42px;
+}
+
+.header {
+  margin-top: 73px;
 }
 
 .header__row {
@@ -330,7 +320,10 @@ a {
   }
   .timer {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 20px;
+  }
+  .timer__count {
+    display: block;
   }
   .timer__row {
     -webkit-box-align: center;

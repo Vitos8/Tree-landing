@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700" rel="stylesheet" />
     <script src="js/burger.js" defer></script>
     <script src="js/modal.js" defer></script>
+    <script src="js/timer.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -20,16 +21,16 @@
                 <h3 class="modal__title">Оформить заказ</h3>
                 <div class="modal__input">
                     <label class="modal__input-title">ФИО</label>
-                    <input type="text" placeholder="Введите ваше ФИО" class="modal__input-field" >
+                    <input type="text" required placeholder="Введите ваше ФИО" class="modal__input-field" >
                 </div>
                 <div class="modal__input">
                     <label class="modal__input-title">Телефон</label>
-                    <input type="tel" placeholder="Введите ваш номер телефона" class="modal__input-field" >
+                    <input type="tel" required placeholder="Введите ваш номер телефона" class="modal__input-field" >
                 </div>
                 <div class="modal__btn"><button class="modal__btn-text"> Заказать звонок</button></div>
             </div>
         </div>
-        <div class="timer">
+        <!-- <div class="timer">
             <div class="timer__row">
                 <div class="timer__title">До конца распродажи осталось:</div>
                 <div class="timer__nums">
@@ -39,7 +40,7 @@
                     <div class="timer__seconds"> 17 секунд</div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <header class="header">
             <div class="container">
                 <div class="header__row">
@@ -72,8 +73,8 @@
                     <h1 class="main__title">Встречай Новый Год с прекрасной живой  ёлочкой!</h1>
                     <p class="main__subtitle">У нас в наличии только самые пушистые и свежие ёлки</p>
                     <div   class="main__btn ">
-                        <img src="img/main__bauble.png"  class="main__btn-img " width="113" height="136"  >
-                        <h5 class="main__btn-title ">Заказать</h5>
+                        <img src="img/main__bauble.png"  class="main__btn-img modal-btn " width="113" height="136"  >
+                        <h5 class="main__btn-title modal-btn ">Заказать</h5>
                     </div>
                 </div>
             </div>
@@ -106,7 +107,7 @@
                             <p class="tree__subtitle">Пихта Фразера чаще использовалась в качестве рождественской ёлки Белого дома</p>
                             <p class="tree__description">Мягкий аромат, форма, и способность сохранять мягкие иголки в течение длительного времени, делают её одним из лучших деревьев для рождества</p>
                             <div class="tree__buttons">
-                                <button class="tree__buttons-order modal-btn'">Заказать</button>
+                                <button class="tree__buttons-order modal-btn">Заказать</button>
                                 <button class="tree__buttons-detailed">Подробнее</button>
                             </div>
                         </div>
@@ -120,7 +121,7 @@
                             <p class="tree__subtitle">Русская ель — наиболее традиционная разновидность рождественских деревьев, которую можно встретить в большинстве советских фильмов про новый год</p>
                             <p class="tree__description">Отличительной особенностью русской ёлки являются выраженный хвойный запах, короткие колючие иголки и сравнительно менее пышная крона</p>
                             <div class="tree__buttons">
-                                <button class="tree__buttons-order">Заказать</button>
+                                <button class="tree__buttons-order modal-btn">Заказать</button>
                                 <button class="tree__buttons-detailed">Подробнее</button>
                             </div>
                         </div>
@@ -134,7 +135,7 @@
                             <p class="tree__subtitle">Пихта сибирская является одной из самых красивых и ароматных хвойных пород и ее часто можно встретить в парках и садах</p>
                             <p class="tree__description">Хвоя Сибирской пихты в отличии от еловой крупнее, зеленее, совершенно не колючая и мягкая как трава</p>
                             <div class="tree__buttons">
-                                <button class="tree__buttons-order">Заказать</button>
+                                <button class="tree__buttons-order modal-btn">Заказать</button>
                                 <button class="tree__buttons-detailed">Подробнее</button>
                             </div>
                         </div>

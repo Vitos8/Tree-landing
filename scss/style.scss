@@ -14,17 +14,11 @@
     font-size: 18px;
     line-height: 130%;
     letter-spacing: 0.04em;
-
-		&__row {
-            display: flex;
-            justify-content: center;
-            column-gap: 10px;
-		}
-
-        .timer__nums{
-            display: flex;
-            column-gap: 10px ;
-        }
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .container{
@@ -36,7 +30,7 @@
 
 //HEADER ..............................................................................................................................................................................................................................................................................
 .header {
-
+    margin-top: 73px;
 
 		&__row {
             padding: 25px 0px;
@@ -259,7 +253,11 @@ a{
     }
     .timer {
         font-size: 12px;
-        line-height: 15px;
+        line-height: 20px;
+
+        &__count{
+            display: block;
+        }
 
         &__row{
             align-items: center;
