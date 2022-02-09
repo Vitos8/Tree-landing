@@ -8,9 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant:300,regular,500,600,700" rel="stylesheet" />
     <script src="js/burger.js" defer></script>
+    <script src="js/modal.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
+        <div class="modal ">
+            <div class="modal__body ">
+                <div class="modal__close">
+                    <img src="img/icons/burger-close.svg"  class="modal__close-img">
+                </div>
+                <h3 class="modal__title">Оформить заказ</h3>
+                <div class="modal__input">
+                    <label class="modal__input-title">ФИО</label>
+                    <input type="text" placeholder="Введите ваше ФИО" class="modal__input-field" >
+                </div>
+                <div class="modal__input">
+                    <label class="modal__input-title">Телефон</label>
+                    <input type="tel" placeholder="Введите ваш номер телефона" class="modal__input-field" >
+                </div>
+                <div class="modal__btn"><button class="modal__btn-text"> Заказать звонок</button></div>
+            </div>
+        </div>
         <div class="timer">
             <div class="timer__row">
                 <div class="timer__title">До конца распродажи осталось:</div>
@@ -37,7 +55,7 @@
                         <li class="nav__item "><a href="#"> Сибирская пихта </a> </li>
                         <li class="nav__item "><a href="#"> Как оплатить? </a> </li>
                     </ul>
-                    <button class="header__btn">Консультация</button>
+                    <button class="header__btn modal-btn">Консультация</button>
                 </div>
                 <ul class="active__list ">
                     <li class="active__item "><a href="#"> Пихта Фразера </a> </li>
@@ -53,9 +71,9 @@
                 <div class="main__content">
                     <h1 class="main__title">Встречай Новый Год с прекрасной живой  ёлочкой!</h1>
                     <p class="main__subtitle">У нас в наличии только самые пушистые и свежие ёлки</p>
-                    <div   class="main__btn">
-                        <img src="img/main__bauble.png"  class="main__btn-img" width="113" height="136"  >
-                        <h5 class="main__btn-title">Заказать</h5>
+                    <div   class="main__btn ">
+                        <img src="img/main__bauble.png"  class="main__btn-img " width="113" height="136"  >
+                        <h5 class="main__btn-title ">Заказать</h5>
                     </div>
                 </div>
             </div>
@@ -88,7 +106,7 @@
                             <p class="tree__subtitle">Пихта Фразера чаще использовалась в качестве рождественской ёлки Белого дома</p>
                             <p class="tree__description">Мягкий аромат, форма, и способность сохранять мягкие иголки в течение длительного времени, делают её одним из лучших деревьев для рождества</p>
                             <div class="tree__buttons">
-                                <button class="tree__buttons-order">Заказать</button>
+                                <button class="tree__buttons-order modal-btn'">Заказать</button>
                                 <button class="tree__buttons-detailed">Подробнее</button>
                             </div>
                         </div>
